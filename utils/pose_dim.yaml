@@ -1,0 +1,12 @@
+beat_block_hammer: 9
+hanging_mug: 9
+lift_pot: 9
+place_shoe: 9
+rotate_qrcode: 9
+place_bread_skillet: 18
+place_dual_shoes: 18
+
+# for real-world data
+hang_mug_sampled: 9         # rot_6d + trans_3d
+pour_balls_sampled: 6       # rot_3d + trans_3d
+pick_place_truck_sampled: 9
