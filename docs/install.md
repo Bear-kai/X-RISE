@@ -4,7 +4,7 @@
 
 - If you do not need to evaluate on RoboTwin 2.0 benchmark, please follow the [guide](https://github.com/rise-policy/RISE/blob/main/assets/docs/INSTALL.md) to install the `rise` conda environment, since X-RISE is based on RISE.
 
-- If you have installed the `robotwin` conda environment, basicly you only need to install the MinkowskiEngine as in the guide and the following packages:
+- If you have installed the `robotwin` conda environment, basicly you only need to install the MinkowskiEngine as in the [guide](https://github.com/rise-policy/RISE/blob/main/assets/docs/INSTALL.md) and the following packages:
     ```bash
     pip install easydict==1.13 einops==0.4.1 diffusers==0.11.1
     ```
@@ -15,7 +15,7 @@
 
 ## GPU issues
 
-Please note that the `cuRobo` package (required by evaluation on RoboTwin 2.0) requires Ubuntu >= 20.04 and an NVIDIA GPU newer than the VOLTA architecture. Therefore, it is better for you to have a compatible GPU, such as an RTX 4090. In case you only have an older GPU like a Titan XP, we provide a workaround below.
+Please note that the `cuRobo` package (required by evaluation on RoboTwin 2.0) requires Ubuntu >= 20.04 and an NVIDIA GPU newer than the VOLTA architecture. Therefore, it is recommended to use a compatible GPU, such as an RTX 4090. In case you have to work with an older GPU like a Titan XP, we provide the following workaround.
 
 - modify the `envs/curobo/src/curobo/curobolib/cpp/lbfgs_step_kernel.cu` file:
 

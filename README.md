@@ -8,11 +8,12 @@ This repository contains the code for X-RISE, which performs best in our [[Paper
 
 ## 📚 Abstract
 
-Effectively handling the interplay between spatial perception and action generation remains a critical bottleneck in robotic manipulation. Existing methods typically treat spatial perception and action execution as decoupled or strictly unidirectional processes, fundamentally restricting a robot's ability to master complex manipulation tasks. To address this, we propose X-Imitator, a versatile dual-path framework that models spatial perception and action execution as a tightly coupled bidirectional loop. By reciprocally conditioning current pose predictions on past actions and vice versa, this framework enables continuous mutual refinement between spatial reasoning and action generation. This joint modeling exactly mimics human internal forward models. Designed as a modular architecture, the system can be seamlessly integrated into various visuomotor policies. Extensive experiments across 24 simulated and 3 real-world tasks demonstrate that our framework significantly outperforms both vanilla policies and prior methods utilizing explicit pose guidance.
+Effectively handling the interplay between spatial perception and action generation remains a critical bottleneck in robotic manipulation. Existing methods typically treat these two as decoupled or strictly unidirectional processes, fundamentally restricting a robot’s ability to master complex manipulation tasks. To address this, we propose X-Imitator, a versatile dual-path framework that models spatial perception and action generation through temporally coupled cross-conditioning. Specifically, by conditioning current pose
+predictions on past actions and current action predictions on past poses, this framework enables continuous mutual refinement between spatial perception and action generation. This joint modeling exactly mimics human internal forward models. Thanks to its modular architecture, X-Imitator can be flexibly instantiated using various visuomotor policies. Extensive experiments demonstrate that our framework significantly outperforms both vanilla policies and prior methods utilizing explicit pose guidance.
 
 ## 🔥 Update
 
-- **[2026/xx/xx]** Initial release.
+- **[2026/08/25]** Initial release.
 
 ## 🛫 Quick Start
 
